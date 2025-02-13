@@ -15,7 +15,8 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
+    domains: ['your-image-domain.com'],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

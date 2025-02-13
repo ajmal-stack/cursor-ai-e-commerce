@@ -3,7 +3,18 @@
 import { useState } from 'react';
 import { useStore } from '@/store/useStore';
 import { MagnifyingGlassIcon, FunnelIcon } from '@heroicons/react/24/outline';
-import { products, Product } from '@/data/products';
+import { products } from '@/data/products';
+import Image from 'next/image';
+
+interface Product {
+  id: number;
+  title: string;
+  description: string;
+  price: number;
+  discountedPrice: number;
+  category: string;
+  image: string;
+}
 
 export default function ProductsPage() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -62,11 +73,13 @@ export default function ProductsPage() {
               key={product.id}
               className='bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300'
             >
-              <div className='aspect-w-1 aspect-h-1'>
-                <img
+              <div className='relative aspect-w-1 aspect-h-1 h-64'>
+                <Image
                   src={product.image}
                   alt={product.title}
-                  className='w-full h-64 object-cover'
+                  fill
+                  className='object-cover'
+                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw'
                 />
               </div>
               <div className='p-4'>
@@ -81,13 +94,29 @@ export default function ProductsPage() {
                 </p>
                 <div className='flex gap-2'>
                   <button
-                    onClick={() => addToCart(product)}
+                    onClick={() =>
+                      addToCart({
+                        id: product.id,
+                        name: product.title,
+                        price: product.price,
+                        discountedPrice: product.price, // Assuming no discount for now
+                        image: product.image,
+                      })
+                    }
                     className='flex-1 bg-primary-600 text-white py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors'
                   >
                     Add to Cart
                   </button>
                   <button
-                    onClick={() => addToWishlist(product)}
+                    onClick={() =>
+                      addToWishlist({
+                        id: product.id,
+                        name: product.title,
+                        price: product.price,
+                        discountedPrice: product.price, // Assuming no discount for now
+                        image: product.image,
+                      })
+                    }
                     className='p-2 text-gray-600 hover:text-primary-600 border border-gray-300 rounded-lg transition-colors'
                   >
                     ♡
