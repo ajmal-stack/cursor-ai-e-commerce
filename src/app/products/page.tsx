@@ -1,17 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useStore } from '@/store/useStore';
+import { MagnifyingGlassIcon, FunnelIcon } from '@heroicons/react/24/outline';
 import { products, Product } from '@/data/products';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import Image from 'next/image';
 
 export default function ProductsPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const { addToCart, addToWishlist } = useStore();
-  const [products, setProducts] = useState<Product[]>([]);
 
   const filteredProducts = products.filter((product) => {
     const matchesSearch = product.title
@@ -25,22 +22,51 @@ export default function ProductsPage() {
   const categories = ['all', ...new Set(products.map((p) => p.category))];
 
   return (
-    <main className='min-h-screen'>
-      <Navbar />
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-          {products.map((product) => (
+    <div className='min-h-screen pt-20 px-4 sm:px-6 lg:px-8 bg-gray-50'>
+      {/* Header Section */}
+      <div className='max-w-7xl mx-auto'>
+        <h1 className='text-3xl font-bold text-gray-900 mb-8'>Our Products</h1>
+
+        {/* Search and Filter Section */}
+        <div className='flex flex-col sm:flex-row gap-4 mb-8'>
+          <div className='relative flex-1'>
+            <MagnifyingGlassIcon className='h-5 w-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400' />
+            <input
+              type='text'
+              placeholder='Search products...'
+              className='w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent'
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
+          <div className='relative'>
+            <FunnelIcon className='h-5 w-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400' />
+            <select
+              className='pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent appearance-none bg-white'
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+            >
+              {categories.map((category) => (
+                <option key={category} value={category}>
+                  {category.charAt(0).toUpperCase() + category.slice(1)}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        {/* Products Grid */}
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+          {filteredProducts.map((product) => (
             <div
               key={product.id}
-              className='bg-white rounded-lg shadow-md overflow-hidden'
+              className='bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300'
             >
-              <div className='relative h-48 w-full'>
-                <Image
+              <div className='aspect-w-1 aspect-h-1'>
+                <img
                   src={product.image}
-                  alt={product.name}
-                  fill
-                  className='object-cover'
-                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                  alt={product.title}
+                  className='w-full h-64 object-cover'
                 />
               </div>
               <div className='p-4'>
@@ -72,7 +98,6 @@ export default function ProductsPage() {
           ))}
         </div>
       </div>
-      <Footer />
-    </main>
+    </div>
   );
 }
