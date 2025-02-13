@@ -11,13 +11,23 @@ interface WishlistSidebarProps {
   onClose: () => void;
 }
 
+// Define the Product type
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  discountedPrice: number;
+  image: string;
+  description?: string;
+}
+
 export default function WishlistSidebar({
   isOpen,
   onClose,
 }: WishlistSidebarProps) {
   const { wishlist, removeFromWishlist, addToCart } = useStore();
 
-  const moveToCart = (item: any) => {
+  const moveToCart = (item: Product) => {
     addToCart(item);
     removeFromWishlist(item.id);
   };
