@@ -1,0 +1,274 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Noise-Canceling Headphones",
+      "price": 299.99,
+      "discountedPrice": 249.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
+      "description": "Premium wireless headphones with active noise cancellation"
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch Series X",
+      "price": 399.99,
+      "discountedPrice": 349.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&q=80",
+      "description": "Advanced smartwatch with health monitoring features"
+    },
+    {
+      "id": 3,
+      "name": "Designer Leather Backpack",
+      "price": 129.99,
+      "discountedPrice": 99.99,
+      "category": "Fashion",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80",
+      "description": "Stylish and durable leather backpack for everyday use"
+    },
+    {
+      "id": 4,
+      "name": "4K Ultra HD Smart TV",
+      "price": 899.99,
+      "discountedPrice": 799.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&q=80",
+      "description": "55-inch 4K smart TV with HDR support"
+    },
+    {
+      "id": 5,
+      "name": "Premium Coffee Maker",
+      "price": 199.99,
+      "discountedPrice": 159.99,
+      "category": "Home",
+      "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400&q=80",
+      "description": "Programmable coffee maker with built-in grinder"
+    },
+    {
+      "id": 6,
+      "name": "Wireless Gaming Mouse",
+      "price": 79.99,
+      "discountedPrice": 59.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&q=80",
+      "description": "High-precision wireless gaming mouse with RGB lighting"
+    },
+    {
+      "id": 7,
+      "name": "Mechanical Gaming Keyboard",
+      "price": 149.99,
+      "discountedPrice": 129.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1595225476474-88e2f0d1543c?w=400&q=80",
+      "description": "RGB mechanical keyboard with Cherry MX switches"
+    },
+    {
+      "id": 8,
+      "name": "Vintage Denim Jacket",
+      "price": 89.99,
+      "discountedPrice": 69.99,
+      "category": "Fashion",
+      "image": "https://images.unsplash.com/photo-1578996953841-b187dbe4bc8a?w=400&q=80",
+      "description": "Classic denim jacket with distressed finish"
+    },
+    {
+      "id": 9,
+      "name": "Smart Home Security Camera",
+      "price": 199.99,
+      "discountedPrice": 169.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1557324232-b8917d8c3908?w=400&q=80",
+      "description": "1080p wireless security camera with night vision"
+    },
+    {
+      "id": 10,
+      "name": "Air Purifier Pro",
+      "price": 299.99,
+      "discountedPrice": 249.99,
+      "category": "Home",
+      "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=80",
+      "description": "HEPA air purifier for large rooms"
+    },
+    {
+      "id": 11,
+      "name": "Running Shoes Elite",
+      "price": 129.99,
+      "discountedPrice": 99.99,
+      "category": "Fashion",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+      "description": "Professional running shoes with cushioning technology"
+    },
+    {
+      "id": 12,
+      "name": "Smartphone Stand",
+      "price": 29.99,
+      "discountedPrice": 24.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1586105449897-20b5efeb3233?w=400&q=80",
+      "description": "Adjustable aluminum smartphone holder"
+    },
+    {
+      "id": 13,
+      "name": "Yoga Mat Premium",
+      "price": 49.99,
+      "discountedPrice": 39.99,
+      "category": "Sports",
+      "image": "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=400&q=80",
+      "description": "Eco-friendly non-slip yoga mat"
+    },
+    {
+      "id": 14,
+      "name": "Digital Drawing Tablet",
+      "price": 249.99,
+      "discountedPrice": 199.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1595776613215-fe04b78de7d0?w=400&q=80",
+      "description": "Professional graphics tablet with pressure sensitivity"
+    },
+    {
+      "id": 15,
+      "name": "Stainless Steel Water Bottle",
+      "price": 34.99,
+      "discountedPrice": 29.99,
+      "category": "Sports",
+      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&q=80",
+      "description": "Vacuum insulated water bottle, 32oz"
+    },
+    {
+      "id": 16,
+      "name": "Smart LED Light Bulbs",
+      "price": 79.99,
+      "discountedPrice": 59.99,
+      "category": "Home",
+      "image": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400&q=80",
+      "description": "WiFi-enabled RGB smart bulbs, pack of 4"
+    },
+    {
+      "id": 17,
+      "name": "Wireless Earbuds Pro",
+      "price": 199.99,
+      "discountedPrice": 169.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&q=80",
+      "description": "True wireless earbuds with noise cancellation"
+    },
+    {
+      "id": 18,
+      "name": "Leather Wallet",
+      "price": 49.99,
+      "discountedPrice": 39.99,
+      "category": "Fashion",
+      "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?w=400&q=80",
+      "description": "Genuine leather wallet with RFID protection"
+    },
+    {
+      "id": 19,
+      "name": "Robot Vacuum Cleaner",
+      "price": 299.99,
+      "discountedPrice": 249.99,
+      "category": "Home",
+      "image": "https://images.unsplash.com/photo-1573396505544-8c7e4a2b2b11?w=400&q=80",
+      "description": "Smart robot vacuum with mapping technology"
+    },
+    {
+      "id": 20,
+      "name": "Fitness Tracker Band",
+      "price": 99.99,
+      "discountedPrice": 79.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1557438159-51eec7a6c9e8?w=400&q=80",
+      "description": "Water-resistant fitness tracker with heart rate monitor"
+    },
+    {
+      "id": 21,
+      "name": "Portable Bluetooth Speaker",
+      "price": 149.99,
+      "discountedPrice": 129.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&q=80",
+      "description": "Waterproof speaker with 20-hour battery life"
+    },
+    {
+      "id": 22,
+      "name": "Wool Blend Sweater",
+      "price": 89.99,
+      "discountedPrice": 69.99,
+      "category": "Fashion",
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400&q=80",
+      "description": "Comfortable wool blend sweater for winter"
+    },
+    {
+      "id": 23,
+      "name": "Smart Door Lock",
+      "price": 199.99,
+      "discountedPrice": 169.99,
+      "category": "Home",
+      "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=400&q=80",
+      "description": "Keyless entry smart lock with smartphone control"
+    },
+    {
+      "id": 24,
+      "name": "Resistance Bands Set",
+      "price": 29.99,
+      "discountedPrice": 24.99,
+      "category": "Sports",
+      "image": "https://images.unsplash.com/photo-1598632640487-6ea4a5e8d6c0?w=400&q=80",
+      "description": "Set of 5 resistance bands with different strengths"
+    },
+    {
+      "id": 25,
+      "name": "Wireless Charging Pad",
+      "price": 39.99,
+      "discountedPrice": 29.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1585338835875-eab91edca9c7?w=400&q=80",
+      "description": "Fast wireless charger for smartphones"
+    },
+    {
+      "id": 26,
+      "name": "Smart Coffee Scale",
+      "price": 99.99,
+      "discountedPrice": 79.99,
+      "category": "Home",
+      "image": "https://images.unsplash.com/photo-1517080317469-b68465e035c0?w=400&q=80",
+      "description": "Bluetooth coffee scale with timer"
+    },
+    {
+      "id": 27,
+      "name": "Crossbody Bag",
+      "price": 59.99,
+      "discountedPrice": 49.99,
+      "category": "Fashion",
+      "image": "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?w=400&q=80",
+      "description": "Stylish leather crossbody bag"
+    },
+    {
+      "id": 28,
+      "name": "Gaming Console Pro",
+      "price": 499.99,
+      "discountedPrice": 449.99,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1605901309584-818e25960a8f?w=400&q=80",
+      "description": "Next-gen gaming console with 4K support"
+    },
+    {
+      "id": 29,
+      "name": "Adjustable Dumbbell Set",
+      "price": 299.99,
+      "discountedPrice": 249.99,
+      "category": "Sports",
+      "image": "https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=400&q=80",
+      "description": "Adjustable dumbbells from 5-52.5 lbs"
+    },
+    {
+      "id": 30,
+      "name": "Smart Thermostat",
+      "price": 249.99,
+      "discountedPrice": 199.99,
+      "category": "Home",
+      "image": "https://images.unsplash.com/photo-1567925086983-a5dcc4bc7e63?w=400&q=80",
+      "description": "WiFi-enabled smart thermostat with energy savings"
+    }
+  ]
+}
