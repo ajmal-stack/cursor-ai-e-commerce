@@ -6,16 +6,6 @@ import { MagnifyingGlassIcon, FunnelIcon } from '@heroicons/react/24/outline';
 import { products } from '@/data/products';
 import Image from 'next/image';
 
-interface Product {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  discountedPrice: number;
-  category: string;
-  image: string;
-}
-
 export default function ProductsPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -80,6 +70,7 @@ export default function ProductsPage() {
                   fill
                   className='object-cover'
                   sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw'
+                  priority={false}
                 />
               </div>
               <div className='p-4'>
@@ -99,7 +90,7 @@ export default function ProductsPage() {
                         id: product.id,
                         name: product.title,
                         price: product.price,
-                        discountedPrice: product.price, // Assuming no discount for now
+                        discountedPrice: product.price,
                         image: product.image,
                       })
                     }
@@ -113,7 +104,7 @@ export default function ProductsPage() {
                         id: product.id,
                         name: product.title,
                         price: product.price,
-                        discountedPrice: product.price, // Assuming no discount for now
+                        discountedPrice: product.price,
                         image: product.image,
                       })
                     }
